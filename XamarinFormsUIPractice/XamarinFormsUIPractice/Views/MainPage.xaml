@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsUIPractice.Views.MainPage"
+             Title="{Binding Title}">
+
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label Text="Welcome to Xamarin Forms and Prism!1111" />
+
+        <Button Text="Navigate to AbsoluteLayoutCsharpPage" Command="{Binding NavigateCommand}" CommandParameter="AbsoluteLayoutCsharp" />
+        <Button Text="Navigate to AbsoluteLayoutXamlPage" Command="{Binding NavigateCommand}" CommandParameter="AbsoluteLayoutXaml"/>
+        <Button Text="Navigate to StackLayoutCsharpPage" Command="{Binding NavigateCommand}" CommandParameter="StackLayoutCsharp"/>
+        <Button Text="Navigate to StackLayoutXamlPage" Command="{Binding NavigateCommand}" CommandParameter="StackLayoutXaml"/>
+        <Button Text="Navigate to GridCsharpPage" Command="{Binding NavigateCommand}" CommandParameter="GridCsharp"/>
+        <Button Text="Navigate to GridXamlPage" Command="{Binding NavigateCommand}" CommandParameter="GridXaml"/>
+        <Button Text="Navigate to RelativeLayoutCsharp" Command="{Binding NavigateCommand}" CommandParameter="RelativeLayoutCsharp"/>
+        <Button Text="Navigate to RelativeLayoutXaml" Command="{Binding NavigateCommand}" CommandParameter="RelativeLayoutXaml"/>
+        <Button Text="Navigate to FlexLayoutCsharp" Command="{Binding NavigateCommand}" CommandParameter="FlexLayoutCsharp"/>
+        <Button Text="Navigate to FlexLayoutXaml" Command="{Binding NavigateCommand}" CommandParameter="FlexLayoutXaml"/>
+
+    </StackLayout>
+
+</ContentPage>

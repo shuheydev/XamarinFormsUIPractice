@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XamarinFormsUIPractice.Views.FlexLayoutXaml"
+             Title="{Binding Title}">
+
+    <!--ListViewのようなItemsSourceによるバインディングはできない-->
+    <FlexLayout Direction="Row" Wrap="Wrap">
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+        <Label Text="hello" BackgroundColor="Aqua" WidthRequest="50" HeightRequest="50"/>
+    </FlexLayout>
+
+
+</ContentPage>

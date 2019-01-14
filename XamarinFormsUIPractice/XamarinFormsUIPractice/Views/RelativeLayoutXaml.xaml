@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XamarinFormsUIPractice.Views.RelativeLayoutXaml"
+             Title="{Binding Title}">
+
+    <RelativeLayout>
+        <Label x:Name="Label1" Text="label1" BackgroundColor="#82DADA" FontSize="60"
+               RelativeLayout.XConstraint="{ConstraintExpression 
+                                                Type=RelativeToParent,
+                                                Property=X,
+                                                Constant=30}"
+               RelativeLayout.YConstraint="{ConstraintExpression 
+                                                Type=RelativeToParent,
+                                                Property=Height,
+                                                Factor=0.5}"
+               />
+
+<!--XamlではC#側のように基準要素の「Y座標+高さ」のような指定ができないので断念-->
+        <Label x:Name="Label2" Text="label2" BackgroundColor="#53CF9E" FontSize="40"
+               RelativeLayout.XConstraint="{ConstraintExpression 
+                                                Type=RelativeToParent,
+                                                Property=X,
+                                                Constant=100}"
+               RelativeLayout.YConstraint="{ConstraintExpression
+                                                Type=RelativeToView,
+                                                ElementName=Label1,
+                                                Property=Y,
+                                                Constant=100}"
+               />
+
+        <Label Text="label3" BackgroundColor="Orchid" FontSize="50"
+               RelativeLayout.XConstraint="{ConstraintExpression
+                                                Type=RelativeToView,
+                                                ElementName=Label2,
+                                                Property=X,
+                                                Constant=-50}"
+               RelativeLayout.YConstraint="{ConstraintExpression
+                                                Type=RelativeToView,
+                                                ElementName=Label2,
+                                                Property=Y,
+                                                Constant=20}"
+               />
+
+    </RelativeLayout>
+    
+
+
+
+
+</ContentPage>
